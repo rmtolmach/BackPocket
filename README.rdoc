@@ -1,4 +1,6 @@
-== README
+== BackPocket Games
+
+Working with groups of children can be stressful for many reasons. One reason is the spontaneous need to quickly organize an activity to entertain a group. My app will alleviate the stress from that situation by putting games in your back pocket. Users choose from a few options and the app quickly generates games based on those preferences.
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
