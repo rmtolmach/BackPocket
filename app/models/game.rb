@@ -10,5 +10,3 @@ class Game
   validates_presence_of :name
   has_and_belongs_to_many :users
 end
-
-## game should be many to many with users.

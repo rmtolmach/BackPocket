@@ -1,6 +1,17 @@
-<% @games.each do |game| %>
+<%= form_tag games_path, method: :get do %>
+
+  <h3> How many players? </h3>
+  <%= collection_select(:game, :id, @games, :id, :num_of_players) %> <br>
+
+  <h3> What equipment do you want to use? </h3>
+  <%= collection_select(:game, :id, @games, :id, :equipment) %> <br>
+
+  <h3> The game can be loud </h3>
+  <%= collection_select(:game, :id, @games, :id, :noise) %> <br>
+
+  <h3> How much time do you need to fill? </h3>
+  <%= collection_select(:game, :id, @games, :id, :time_range) %> <br>
 
 
-<%= game.name %>
-
+  <%= submit_tag "Find Games" %>
 <% end %>
