@@ -8,8 +8,6 @@ class Game
   field :description, type: String
 
   validates_presence_of :name
-  # belongs_to :user, :inverse_of => :user, :class_name => "User"
-  #below is not working. Above doesn't give me a huge error.
   has_and_belongs_to_many :users
 end
 

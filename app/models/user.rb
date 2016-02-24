@@ -5,4 +5,3 @@ class User
   validates_presence_of :username
   has_and_belongs_to_many :games
 end
-#many to many
