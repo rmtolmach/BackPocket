@@ -1,6 +1,7 @@
 class WelcomeController < ApplicationController
   def index
-    @games = Game.all
+    games = Game.all
+## render some json here
   end
 
 end
