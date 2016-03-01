@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
 
   get 'games' => 'games#index'
-  get 'games/:id' => 'games#show'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
