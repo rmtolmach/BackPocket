@@ -2,9 +2,20 @@ require 'rails_helper'
 
 RSpec.describe GamesController, type: :controller do
 
-  let(:tag)   { Game.create(name: "Tag", equipment: "ball", description: "run, chase, laugh") }
+  let(:tag)   { Game.create(name: "go fish", equipment: "ball", description: "run, chase, laugh") }
 
-  let(:keys)   { ["name", "equipment", "id", "description", "noise", "num_of_players", "time_range"] }
+  let(:keys)   { ["_id", "description", "equipment", "name", "noise", "num_of_players", "time_range", "user_ids"] }
+
+  describe "GET 'index'" do
+    it "is successful" do
+      get :index
+      expect(response.response_code).to eq 200
+    end
+
+    it "returns json" do
+      get :index
+      expect(response.header['Content-Type']).to include 'application/json'
+    end
 
   context "the returned json object" do
     before :each do
@@ -19,10 +30,14 @@ RSpec.describe GamesController, type: :controller do
     end
 
     it "has the right keys" do
-      expect(@response.keys.sort).to eq keys
+      expect(@response[0].keys).to eq keys
+    end
+
+    after :each do
+      Game.all.destroy
     end
 
   end
-
+end
 
 end
