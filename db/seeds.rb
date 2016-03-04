@@ -1,18 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
-
-# user = User.create(username: "becca", email: "harry@potter.com", games: [
-  # game = Game.create(name: "Popcorn", num_of_players: {"min"=>"3", "max"=>"30"}, equipment: "ball (soft)", noise: true, time_range: {"min"=>"5", "max"=>"30"}, description: "Players stand in a cricle. One person throws the ball in the air, claps once, and catches the ball without dropping it. All of the others players do the same as the ball makes its way around the circle. When the ball reaches the person who went first, they throw it in the air, clap twice and catch it. With each round, the number of claps increases. Players who don’t clap the proper number of times, or drop the ball are out. Last person standing is the winner.")
-  # game.save
-# ])
-# user.save
-
-
 seed_games = [
   { name: "Popcorn", num_of_players: {"min"=>"3", "max"=>"30"}, equipment: "ball (soft)", noise: true, time_range: {"min"=>"5", "max"=>"30"}, description: "Players stand in a cricle. One person throws the ball in the air, claps once, and catches the ball without dropping it. All of the others players do the same as the ball makes its way around the circle. When the ball reaches the person who went first, they throw it in the air, clap twice and catch it. With each round, the number of claps increases. Players who don’t clap the proper number of times, or drop the ball are out. Last person standing is the winner." },
 
@@ -34,8 +19,13 @@ seed_games = [
 
   { name: "Rock, Paper, Scissors Tag", num_of_players: {"min"=>"10", "max"=>"40"}, equipment: nil, noise: true, time_range: {"min"=>"10", "max"=>"30"}, description: "You need a moderately large area for your group to run around in. Two teams. Each team huddles up and quietly decides to throw \"rock,\" \"paper,\" or \"scissors.\" Players stand in the middle shoulder to shoulder with their team and face to face with the opposing team. On \"Go!\" everyone plays one game of rock, paper, scissors with the person in front of them, using the pre-determined rock, paper, or scissors. If you loose, you turn around and run to the wall of the gym, or past a prefefined line. If you make it without getting tagged by the other team, you are safe, if you were tagged, you are now a part of the other team. If you win, you try to tag people from the other team. The game ends when everyone ends up on one team."},
 
-  { name: "People to People", num_of_players: {"min"=>"2", "max"=>"50"}, equipment: nil, noise: false, time_range: {"min"=>"5", "max"=>"15"}, description: "Players find a partner and stand next to them. Whatever combination of body parts you call out, the partners have to make those connections. For example, \"back to back,\" \"toe to toe,\" \"knee to elbow.\" When you call \"People to People,\" players find a new partner. You can play so each command adds on the previous so it starts looking like twister. Or not."}
+  { name: "People to People", num_of_players: {"min"=>"2", "max"=>"50"}, equipment: nil, noise: false, time_range: {"min"=>"5", "max"=>"15"}, description: "Players find a partner and stand next to them. Whatever combination of body parts you call out, the partners have to make those connections. For example, \"back to back,\" \"toe to toe,\" \"knee to elbow.\" When you call \"People to People,\" players find a new partner. You can play so each command adds on the previous so it starts looking like twister. Or not."},
 
+  { name: "Group Juggle", num_of_players: {"min"=>"2", "max"=>"10"}, equipment: "ball (soft)", noise: true, time_range: {"min"=>"5", "max"=>"20"}, description: "Throw the ball in the air. Players try to prevent the ball from hitting the ground by hitting it the air. Catching or holding on to the ball is not allowed."},
+
+  { name: "Helium Hoops", num_of_players: {"min"=>"5", "max"=>"30"}, equipment: "hula-hoops", noise: true, time_range: {"min"=>"10", "max"=>"20"}, description: "FRUSTRATION WARNING. Five to ten players stand in a circle with their index fingers outstretched. Rest a hula-hoop on each group's fingers, instructing them not to grab it. The goal is to lower the hoop to the ground with everyone remaining in contact with the hoop at all times. (Can also be played with a long stick.)"},
+
+  { name: "Screaming Toes", num_of_players: {"min"=>"10", "max"=>"20"}, equipment: nil, noise: true, time_range: {"min"=>"5", "max"=>"15"}, description: "Players stand in a a close circle. When you say, \"Look down,\" each person looks down at someone else's feet. When you say, \"Look up,\" each person quickly looks up at the face of another person. If two people are looking at each other, they scream! They sit down and are no longer in the game. Or not."}
 
 ]
 
