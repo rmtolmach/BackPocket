@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'login' => 'games#login'
   get "/auth/facebook"
   get "/auth/facebook/callback", to: "sessions#create"
+  get "logout", to: "sessions#destroy"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
