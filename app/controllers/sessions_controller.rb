@@ -2,6 +2,6 @@ class SessionsController < ApplicationController
   def create
     user = User.from_omniauth(env["omniauth.auth"])
     session[:user_id] = user.id
-    redirect_to games_path
+    redirect_to "http://localhost:3000/"
   end
 end
