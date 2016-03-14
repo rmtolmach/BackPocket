@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-gem "mongoid", git: 'git://github.com/mongoid/mongoid.git'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
 # Use SCSS for stylesheets
@@ -35,12 +34,17 @@ gem 'rack-cors'
 gem 'omniauth'
 gem 'omniauth-facebook'
 
+group :production do
+  gem "mongoid", git: 'git://github.com/mongoid/mongoid.git'
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'rspec-rails'
   gem 'simplecov', :require => false
   gem 'dotenv-rails'
+  gem "mongoid", git: 'git://github.com/mongoid/mongoid.git'
 
 end
 
