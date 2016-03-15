@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem "mongoid", git: 'git://github.com/mongoid/mongoid.git'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
 # Use SCSS for stylesheets
@@ -22,6 +24,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'rack-cors'
 
+gem "passenger"
+gem "sqlite3"
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -35,7 +41,6 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 
 group :production do
-  gem "mongoid", git: 'git://github.com/mongoid/mongoid.git'
 end
 
 group :development, :test do
@@ -44,7 +49,6 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'simplecov', :require => false
   gem 'dotenv-rails'
-  gem "mongoid", git: 'git://github.com/mongoid/mongoid.git'
 
 end
 
