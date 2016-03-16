@@ -39,6 +39,7 @@ gem "sqlite3"
 
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'dotenv-rails'
 
 group :production do
 end
@@ -48,7 +49,6 @@ group :development, :test do
   gem 'byebug'
   gem 'rspec-rails'
   gem 'simplecov', :require => false
-  gem 'dotenv-rails'
 
 end
 
