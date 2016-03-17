@@ -1,29 +1,17 @@
-[Angular2 App](https://github.com/rmtolmach/frontpocket)
 # Back Pocket Games
 
-Working with groups of children can be stressful for many reasons. One reason is the spontaneous need to quickly organize an activity to entertain a group. My app will alleviate the stress from that situation by putting games in your back pocket. Users choose from a few options and the app quickly generates games based on those preferences.
+Back Pocket Games uses MongoDB as the database, Rails as the backend api where all the games live, and Angular 2 on the front end.
 
-[Product Plan](https://gist.github.com/rmtolmach/fd41a25e9926ea6f925e)
-[Concept](https://gist.github.com/rmtolmach/0d6fbd14be3d49e81e15)
+This is the Rails api that serves my [Angular 2 App](https://github.com/rmtolmach/frontpocket) which generates and filters games. See that repo for more details.
 
-[Trello Board](https://trello.com/b/2h45Luv0/backpocket-games)
+[api](http://ec2-52-37-233-63.us-west-2.compute.amazonaws.com/games)
 
-Back Pocket Games uses MongoDB as the database, Rails as the backend api where all the games live, and Angular 2 on the front end. 
+##Starting the Project
+1. Clone repo
+2. cd into the project folder
+3. `gem install bundler`
+4. Run `bundle install`
+5. Run `rake db:seed`
 
-Things you may want to cover:
-
+##Dependencies
 * Ruby version 2.2.3
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
